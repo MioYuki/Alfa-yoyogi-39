@@ -185,6 +185,7 @@ h2:after {
   padding-left: 20px;
   display: inline-block;
   width: 80%;
+  max-width: 539px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -336,17 +337,6 @@ top: calc(100% - 3px);
   
   @media (max-width: 639px) {
   
-  #SNS{
-    max-width: 150px;
-    padding: 10px 7px 3px;
-  }
-  
-  .rogo{
-    width: 90%;
-    max-width: 300px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-  }
   
   }
   
@@ -354,10 +344,6 @@ top: calc(100% - 3px);
   
   @media (min-width: 639px) {
   
-  #SNS{
-    max-width: 165px;
-    padding: 10px 8px 3px;
-    display:  inline-block;
-    vertical-align:  middle;
-  }
+
 }
+
