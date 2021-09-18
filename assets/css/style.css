@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+/*ここからN高*/
+
+.section--clear {
+  /* ステージクリア画面 */
+  position: fixed;
+  display: none;
+  /* 読み込み時に一瞬表示されるのを防ぐ */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+.clear-message {
+  margin: 2em 0;
+  border-top: solid 25px var(--main-Accentcolor);
+  border-radius: 25px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.39);
+  background-color: var(--main-backcolor);
+  padding: 5px 30px 30px;
+  position: relative;
+}
+
+.clear-message p {
+    margin: 0; 
+    padding: 0;
+}
+
+.section--clear.isClear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input {
+  font-size: 15px;
+  border: solid 2px var(--main-Accentcolor);
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+summary {
+  margin-top: 20px;
+}
+
+/*ここまでN高*/
+
+body{
+font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meirio', sans-serif;
+color: var(--main-textcolor);
+background-color: var(--main-framecolor);
+}
+
+#all, #stage{
+  max-width: 839px;
+  text-align: center;
+  color: var(--main-textcolor);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--main-backcolor);
+  border-radius: 39px;
+}
+
+#title{
+  max-width: 90%;
+  padding: 15px 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*表題*/
+
+.attention {
+  position: relative;
+  padding: 1.5rem 1.5rem calc(1.5rem + 10px);
+  border: 2px solid red;
+  color: red;
+  font-weight:bold;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.attention:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: '';
+  border-top: 2px solid red;
+  background-image: -webkit-repeating-linear-gradient(135deg, red, red 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(-45deg, red, red 1px, transparent 2px, transparent 5px);
+  background-size: 7px 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+h2 {
+  position: relative;
+  line-height: 1.4;
+  padding:0.25em 1em;
+  display: inline-block;
+  top:0;
+}
+
+h2:before, h2:after { 
+  position: absolute;
+  top: 0;
+  content:'';
+  width: 8px;
+  height: 100%;
+  display: inline-block;
+}
+
+h2:before {
+  border-left: solid 1px var(--main-Accentcolor);
+  border-top: solid 1px var(--main-Accentcolor);
+  border-bottom: solid 1px var(--main-Accentcolor);
+  left: 0;
+}
+
+h2:after {
+  content: '';
+  border-top: solid 1px var(--main-Accentcolor);
+  border-right: solid 1px var(--main-Accentcolor);
+  border-bottom: solid 1px var(--main-Accentcolor);
+  right: 0;
+}
+
+.rogo{
+  width: 90%;
+  max-width: 439px;
+  display:  inline-block;
+  vertical-align:  middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+::selection
+{
+    background: var(--main-Accentcolor);
+    color: #ffffff;
+}
+
+/* for Firefox */
+::-moz-selection
+{
+    background:　var(--main-Accentcolor);
+    color: #ffffff;
+}
+
+#text{
+  width: 95%;
+  max-width: 600px;
+  font-size: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.frame{
+  border-top: solid 25px var(--main-Accentcolor);
+  border-radius: 25px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.39);
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+  display: inline-block;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hr{
+  width: 100%;
+  height: 1.39px;
+  border: 1.39px solid var(--main-Accentcolor);
+  border-radius: 3px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.toplogo {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.oflink {
+color: var(--main-Accentcolor);
+text-decoration: none
+}
+
+#cr {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sousin {
+  margin-top: 15px;
+}
+
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: var(--main-Accentcolor);
+  background-color: var(--main-backcolor);
+  border: solid 2px var(--main-Accentcolor);
+  border-radius: 3px;
+  transition: .39s;
+  font-weight:	bold;
+  min-width: 100px;
+}
+
+.btn-flat-border:hover {
+  background: var(--main-Accentcolor);
+  color: white;
+}
+
+.btn-border-bottom {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0;
+  text-decoration: none;
+  color: var(--main-Accentcolor);
+}
+
+.btn-border-bottom:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top: 100%;
+  left: 0;
+  border-radius: 3px;
+  background:var(--main-Accentcolor);
+  transition: .2s;
+}
+
+.btn-border-bottom:hover:before {
+top: -webkit-calc(100% - 3px);
+top: calc(100% - 3px);
+}
+
+.sumaho-waku .sumaho-moji, .sumaho-waku:after, .sumaho-waku:before {
+  max-width: 200px;/*スマホ幅の最大値*/
+  background-color: #111;/*スマホの色*/
+  color: #666;/*◎ボタンの色*/
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sumaho-waku .sumaho-moji {
+  background-color: #fff;/*スマホ画面の背景色*/
+  border-left: 5px #111 solid;/*スマホの色*/
+  border-right: 5px #111 solid;/*スマホの色*/
+  height: 300px;/*スマホ画面の高さ*/
+  font-size: 14px;/*画面内のフォントサイズ*/
+  width: 100%;
+  padding: 5px;
+  overflow: auto;
+  box-sizing: border-box;
+  background: linear-gradient(-135deg, var(--main-back2color), var(--main-Accentcolor));
+}
+.sumaho-waku:before, .sumaho-waku:after {
+  display: block;
+  text-align: center;
+  font-family: 'MS PGothic', sans-serif;
+  line-height: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.sumaho-waku:before {
+  content: '…';
+  font-size: 30px;
+  border-radius: 30px 30px 0 0;
+  height: 30px;
+}
+.sumaho-waku:after {
+  font-size: 50px;
+  padding-top: 9px;
+  content: "○";
+  border-radius: 0px 0px 30px 30px;
+  height: 60px;
+}
+
+/*light*/
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-Accentcolor: #00BFFF;
+    --main-framecolor:#87CEFA;
+    --main-backcolor: #FFFFFF;
+    --main-back2color: #D1FEFF;
+    --main-textcolor: #000000;
+  }
+  
+  }
+  
+  /*dark*/
+  
+  @media (prefers-color-scheme: dark) {
+  :root {
+    --main-Accentcolor: #91d0cd;
+    --main-framecolor:#009c9e;
+    --main-backcolor: #074d59;
+    --main-back2color: #00696B;
+    --main-textcolor: #ffffff;
+  
+  }
+  
+  }
+  
+  /*SmartPhone*/
+  
+  @media (max-width: 639px) {
+  
+  #SNS{
+    max-width: 150px;
+    padding: 10px 7px 3px;
+  }
+  
+  .rogo{
+    width: 90%;
+    max-width: 300px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  
+  }
+  
+  /*PC*/
+  
+  @media (min-width: 639px) {
+  
+  #SNS{
+    max-width: 165px;
+    padding: 10px 8px 3px;
+    display:  inline-block;
+    vertical-align:  middle;
+  }
+}

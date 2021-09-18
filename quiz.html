@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <title>スマートフォンからの脱出 feat.YOYOGI39 | ProjectN</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <div id="stage">
+
+    <div id="title">
+      <img src="assets/img/tlogo.png" class="rogo" alt="YOYOGI39">
+      <br><br>
+      <div class="hr"></div>
+    </div>
+
+    <!-- STAGE1　ここから -->
+
+    <div v-if="next['stage0']" id="sectionStage1" class="stage">
+
+
+      <!-- STAGE1問題セクション　ここから -->
+
+      <h2>STAGE：1 Twitterの謎</h2>
+      <h3>
+        ああああ
+        <br>
+        ああああ
+        <br>
+        ああああ
+        <br><br>
+      </h3>
+      <img class="toplogo" src="assets/img/stage.png" alt="main">
+      <br><br>
+
+      <!-- STAGE1問題セクション　ここまで -->
+
+      <!-- STAGE1解答入力セクション　ここから -->
+
+      <div class="frame">
+        <h2>答えを入力</h2>
+
+        <answer-input v-bind:correct="correctAnswer['stage1']['q1']"
+          v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+
+      </div>
+
+      <br><br><br>
+
+      <div class="frame">
+
+        <h2>ヒント集</h2>
+
+        <br>
+        <h4>謎のヒントと解答は下から確認できる。</h4>
+
+        <details>
+          <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+          <br><br>
+          あああ
+          <br>
+        </details>
+        <br>
+        <details>
+          <summary class="btn-flat-border">解答</summary>
+          <br><br>
+          Twitter
+          <br>
+        </details>
+
+      </div>
+
+      <br><br><br>
+
+      <!-- STAGE1解答入力セクション　ここまで -->
+
+      <!-- STAGE1クリア画面　ここから -->
+
+      <section v-bind:class="{isClear:clear['stage1']}" class="section section--clear">
+        <div class="container">
+          <div class="clear-message">
+            <div class="clear-message__title">
+              <h2>STAGE：1 クリア！</h2>
+            </div>
+            <div class="clear-message__content">
+              <p>Twitterのロックが解除された！</p><br>
+              <p>次のアプリへ進もう。</p><br>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'"
+                class="btn-flat-border">次のステージへ</button>
+            </div>
+          </div>
+      </section>
+
+      <!-- STAGE1クリア画面　ここまで -->
+
+    </div>
+    <!-- STAGE1　ここまで -->
+
+    <!-- STAGE2　ここから -->
+
+    <div v-if="next['stage1']" id="sectionStage2" class="stage">
+
+      <!-- STAGE2問題セクション　ここから -->
+
+      <h2>STAGE：2 YouTubeの謎</h2>
+      <h3>
+        ああああ
+        <br>
+        ああああ
+        <br>
+        ああああ
+        <br><br>
+      </h3>
+      <img class="toplogo" src="assets/img/stage.png" alt="main">
+      <br><br>
+
+      <!-- STAGE2問題セクション　ここまで -->
+
+      <!-- STAGE2解答入力セクション　ここから -->
+
+      <div class="frame">
+        <h2>答えを入力</h2>
+
+        <answer-input v-bind:correct="correctAnswer['stage2']['q1']"
+          v-on:answer-input="answerInput($event, 'stage2', 1)">
+        </answer-input>
+
+      </div>
+
+      <br><br><br>
+
+      <div class="frame">
+
+        <h2>ヒント集</h2>
+
+        <br>
+        <h4>謎のヒントと解答は下から確認できる。</h4>
+
+
+        <details>
+          <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+          <br><br>
+          あああ
+          <br>
+        </details>
+        <br>
+        <details>
+          <summary class="btn-flat-border">解答</summary>
+          <br><br>
+          YouTube
+          <br>
+        </details>
+
+      </div>
+
+      <br><br><br>
+
+      <!-- STAGE2解答入力セクション　ここまで -->
+
+      <!-- STAGE2クリア画面　ここから -->
+      <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}" class="section section--clear">
+        <div class="container">
+          <div class="clear-message">
+            <div class="clear-message__title">
+              <h2>STAGE：2 クリア！</h2>
+            </div>
+            <div class="clear-message__content">
+              <p>YouTubeのロックが解除された！</p><br>
+              <p>さあ、脱出しよう。</p><br>
+              <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'"
+                class="btn-flat-border">次のステージへ</button>
+            </div>
+          </div>
+      </section>
+      <!-- STAGE2クリア画面　ここまで -->
+
+    </div>
+
+    <!-- STAGE2　ここまで -->
+
+    <!-- STAGE3　ここから -->
+    <div v-if="next['stage2']" id="sectionStage3" class="stage">
+
+      <!-- STAGE3問題セクション　ここから -->
+
+      <h2>STAGE：3 最後の謎</h2>
+      <h3>
+        ああああ
+        <br>
+        ああああ
+        <br>
+        ああああ
+        <br><br>
+      </h3>
+      <img class="toplogo" src="assets/img/stage.png" alt="main">
+      <br><br>
+
+      <!-- STAGE3問題セクション　ここまで -->
+
+      <!-- STAGE3解答入力セクションここから -->
+
+
+
+      <div class="frame">
+        <h2>答えを入力</h2>
+
+        <answer-input v-bind:correct="correctAnswer['stage3']['q1']"
+          v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
+
+      </div>
+
+      <br><br><br>
+
+      <div class="frame">
+
+        <h2>ヒント集</h2>
+
+        <br>
+        <h4>謎のヒントと解答は下から確認できる。</h4>
+
+        <details class="anime">
+          <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+          <br><br>
+          あああ
+          <br>
+        </details>
+        <br>
+        <details>
+          <summary class="btn-flat-border">解答</summary>
+          <br><br>
+          Final
+          <br>
+        </details>
+
+      </div>
+
+      <br><br><br>
+
+      <!-- STAGE3解答入力セクション　ここまで -->
+
+
+    </div>
+    <!-- STAGE3　ここまで -->
+
+    <div id=cr>
+      <div class="hr"></div>
+      <br>
+      授業主催： N・S高<br>
+      協力：株式会社SCRAP<br>
+      企画制作：N・S高生<br>
+      <br>
+      「リアル脱出ゲーム」は株式会社SCRAPの登録商標です。
+      <br><br>
+      株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>
+      生徒が制作したものであり、<br>
+      SCRAPが主催/公認するものではありません。
+      <br><br>
+      <div class="hr"></div>
+      <br><br>
+      © 2021 YOYOGI39
+      <br><br><br>
+    </div>
+
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
