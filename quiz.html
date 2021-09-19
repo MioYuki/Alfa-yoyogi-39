@@ -24,15 +24,14 @@
     <!-- STAGE1　ここから -->
 
     <div id="text">
+
+      <!-- STAGE1問題セクション　ここから -->
       <div v-if="next['stage0']" id="sectionStage1" class="stage">
-
-
-        <!-- STAGE1問題セクション　ここから -->
 
         <h2>STAGE：1 Twitterの謎</h2>
 
         <h3>
-          ここが最初のステージ、Twitterのようだ。
+          ここが最初のアプリ、Twitterのようだ。
           <br>
           以下の2問を解けば、次のアプリへの道が開くらしい。
           <br>
@@ -187,14 +186,30 @@
 
         <h2>STAGE：2 YouTubeの謎</h2>
         <h3>
-          ああああ
+          ここが2つ目かつ最後のアプリ、YouTubeのようだ。
           <br>
-          ああああ
+          Twitterのように以下の2問を解けば、脱出出来るらしい！
           <br>
-          ああああ
+          問題を解き、スマホから脱出しよう！
+          <br><br>
+          ※2問ともひらがなで回答しよう
           <br><br>
         </h3>
-        <img class="toplogo" src="assets/img/stage.png" alt="main">
+
+        <h2>第1問</h2>
+        <br><br>
+
+        <!-- h1 class="nazo">
+          yyyy
+          <br>
+          yyyy
+          <br>
+          yyyy
+          <br>
+        </h1 -->
+
+        <img class="toplogo" src="assets/img/y1.png" alt="2-1YouTube問題">
+
         <br><br>
 
         <!-- STAGE2問題セクション　ここまで -->
@@ -202,7 +217,7 @@
         <!-- STAGE2解答入力セクション　ここから -->
 
         <div class="frame">
-          <h2>答えを入力</h2>
+          <h2>1問目の答えを入力</h2>
 
           <answer-input v-bind:correct="correctAnswer['stage2']['q1']"
             v-on:answer-input="answerInput($event, 'stage2', 1)">
@@ -221,16 +236,16 @@
 
 
           <details>
-            <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+            <summary class="btn-flat-border">第1問 - ヒント</summary>
             <br><br>
-            あああ
+            <img class="toplogo" src="assets/img/y1h.png" alt="2-1YouTubeヒント">
             <br>
           </details>
           <br>
           <details>
-            <summary class="btn-flat-border">解答</summary>
+            <summary class="btn-flat-border">第1問 - 解答</summary>
             <br><br>
-            YouTube
+            ようつべ
             <br>
           </details>
 
@@ -238,7 +253,64 @@
 
         <br><br><br>
 
+        <h2>第2問</h2>
+        <br><br>
+
+        <!-- h1 class="nazo">
+          yyyy
+          <br>
+          yyyy
+          <br>
+          yyyy
+          <br>
+        </h1 -->
+
+        <img class="toplogo" src="assets/img/y2.png" alt="2-2YouTube問題">
+
+        <br><br>
+
+        <!-- STAGE2問題セクション　ここまで -->
+
+        <!-- STAGE2解答入力セクション　ここから -->
+
+        <div class="frame">
+          <h2>2問目の答えを入力</h2>
+
+          <answer-input v-bind:correct="correctAnswer['stage2']['q2']"
+            v-on:answer-input="answerInput($event, 'stage2', 2)">
+          </answer-input>
+
+        </div>
+
+        <br><br><br>
+
+        <div class="frame">
+
+          <h2>ヒント集</h2>
+
+          <br>
+          <h4>謎のヒントと解答は下から確認できる。</h4>
+
+
+          <details>
+            <summary class="btn-flat-border">第2問 - ヒント</summary>
+            <br><br>
+            アイコンの状態に注目
+            <br>
+          </details>
+          <br>
+          <details>
+            <summary class="btn-flat-border">第2問 - 解答</summary>
+            <br><br>
+            うそつき
+            <br>
+          </details>
+
+        </div>
+
         <!-- STAGE2解答入力セクション　ここまで -->
+
+        <br><br><br>
 
         <!-- STAGE2クリア画面　ここから -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}" class="section section--clear">
