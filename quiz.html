@@ -197,18 +197,11 @@
         </h3>
 
         <h2>第1問</h2>
-        <br><br>
+        <br><br><br>
 
-        <!-- h1 class="nazo">
-          yyyy
-          <br>
-          yyyy
-          <br>
-          yyyy
-          <br>
-        </h1 -->
-
+        <div class="hr"></div>
         <img class="toplogo" src="assets/img/y1.png" alt="2-1YouTube問題">
+        <div class="hr"></div>
 
         <br><br>
 
@@ -234,11 +227,10 @@
           <br>
           <h4>謎のヒントと解答は下から確認できる。</h4>
 
-
           <details>
             <summary class="btn-flat-border">第1問 - ヒント</summary>
             <br><br>
-            <img class="toplogo" src="assets/img/y1h.png" alt="2-1YouTubeヒント">
+            <img class="toplogo nazo" src="assets/img/y1h.png" alt="2-1YouTubeヒント">
             <br>
           </details>
           <br>
@@ -254,18 +246,11 @@
         <br><br><br>
 
         <h2>第2問</h2>
-        <br><br>
+        <br><br><br>
 
-        <!-- h1 class="nazo">
-          yyyy
-          <br>
-          yyyy
-          <br>
-          yyyy
-          <br>
-        </h1 -->
-
+        <div class="hr"></div>
         <img class="toplogo" src="assets/img/y2.png" alt="2-2YouTube問題">
+        <div class="hr"></div>
 
         <br><br>
 
@@ -290,7 +275,6 @@
 
           <br>
           <h4>謎のヒントと解答は下から確認できる。</h4>
-
 
           <details>
             <summary class="btn-flat-border">第2問 - ヒント</summary>
@@ -338,26 +322,31 @@
 
         <!-- STAGE3問題セクション　ここから -->
 
-        <h2>STAGE：3 最後の謎</h2>
         <h3>
-          ああああ
-          <br>
-          ああああ
-          <br>
-          ああああ
+          全てのロックを解除し無事脱出……？
+          <br><br>
+          「……この私が、素直にそうさせると思いましたか？」
+          <br><br>
+          暴走したAIが立ち塞がってきた。<br>
+          AIを倒し、今度こそ脱出しよう。
           <br><br>
         </h3>
-        <img class="toplogo" src="assets/img/stage.png" alt="main">
+
+        <h2>FINALSTAGE：最終決戦</h2>
+        <br><br><br>
+
+        <div class="hr"></div>
+        <img class="toplogo" src="assets/img/fin.png" alt="main">
+        <div class="hr"></div>
+
         <br><br>
 
         <!-- STAGE3問題セクション　ここまで -->
 
         <!-- STAGE3解答入力セクションここから -->
 
-
-
         <div class="frame">
-          <h2>答えを入力</h2>
+          <h2>最終問題の答えを入力</h2>
 
           <answer-input v-bind:correct="correctAnswer['stage3']['q1']"
             v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
@@ -373,17 +362,42 @@
           <br>
           <h4>謎のヒントと解答は下から確認できる。</h4>
 
-          <details class="anime">
-            <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+          <details>
+            <summary class="btn-flat-border">最終問題 - ヒント①</summary>
             <br><br>
-            あああ
+            赤線1本+黒線3本の計の4本の線、といえば？
             <br>
           </details>
           <br>
+
           <details>
-            <summary class="btn-flat-border">解答</summary>
+            <summary class="btn-flat-border">最終問題 - ヒント②</summary>
             <br><br>
-            Final
+            分数？
+            <br>
+          </details>
+          <br>
+
+          <details>
+            <summary class="btn-flat-border">最終問題 - ヒント③</summary>
+            <br><br>
+            通分してみよう
+            <br>
+          </details>
+          <br>
+
+          <details>
+            <summary class="btn-flat-border">最終問題 - ヒント④</summary>
+            <br><br>
+            26個あるものとは？
+            <br>
+          </details>
+          <br>
+
+          <details>
+            <summary class="btn-flat-border">最終問題 - 解答</summary>
+            <br><br>
+            Twitter
             <br>
           </details>
 

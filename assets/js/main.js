@@ -24,7 +24,7 @@ const app = Vue.createApp({
         },
 
         stage3: {
-          q1: 'Final',
+          q1: 'Twitter',
         }
       },
 
