@@ -17,7 +17,7 @@ const app = Vue.createApp({
           q1: '56',
           q2: '2006',
         },
-        
+
         stage2: {
           q1: 'ようつべ',
           q2: 'うそつき',
@@ -41,7 +41,7 @@ const app = Vue.createApp({
           false,
         ],
         stage3: [
-          false, 
+          false,
         ]
 
       },
@@ -69,14 +69,14 @@ const app = Vue.createApp({
     /* 「送信」ボタンをクリックした場合の動作です。 */
     answerInput(event, stage, number, final) {
       /* answerをtrueまたはfalseにします。 */
-      this.answer[stage][number-1] = event;
+      this.answer[stage][number - 1] = event;
       /* STAGEのすべての問題がtrueか調べてclearの値を変更します。*/
       const result = this.answer[stage].every((element) => {
         return element;
       });
       this.clear[stage] = result;
       /* 最終ステージの入力を判定します。 */
-      if ( this.clear[stage] === true && final === 'final' ) {
+      if (this.clear[stage] === true && final === 'final') {
         window.location.href = 'final.html';
       }
     },
@@ -87,7 +87,7 @@ const app = Vue.createApp({
     nextStage(stage) {
       this.clear[stage] = false;
       this.next[stage] = true;
-      this.next["stage"+(Number(stage.substr(-1))-1)] = false;
+      this.next["stage" + (Number(stage.substr(-1)) - 1)] = false;
     },
   }
 })
@@ -116,11 +116,11 @@ app.component('answer-input', {
     </div>`,
   methods: {
     judgement(answer) {
-      if(answer === this.correct) { // 入力値が解答と一致する場合
+      if (answer === this.correct) { // 入力値が解答と一致する場合
         this.message = this.okMessage;
         this.$emit('answerInput', true);
       } else { // 一致しない場合
-        this.message = this.ngMessage; 
+        this.message = this.ngMessage;
         this.$emit('answerInput', false);
       }
     },
