@@ -23,297 +23,309 @@
 
     <!-- STAGE1　ここから -->
 
-    <div v-if="next['stage0']" id="sectionStage1" class="stage">
+    <div id="text">
+      <div v-if="next['stage0']" id="sectionStage1" class="stage">
 
 
-      <!-- STAGE1問題セクション　ここから -->
+        <!-- STAGE1問題セクション　ここから -->
 
-      <h2>STAGE：1 Twitterの謎</h2>
-      <h3>
-        ここが最初のステージ、Twitterのようだ。
-        <br>
-        以下の2問を解けば、次のアプリへの道が開くらしい。
-        <br>
-        問題を解き、ロックを解除しよう。
-        <br>
-      </h3>
+        <h2>STAGE：1 Twitterの謎</h2>
 
-      <h2>第1問</h2>
-      <br><br>
-      <img class="toplogo" src="assets/img/t1.png" alt="1-1Twitter問題">
-      <br><br>
-
-      <!-- STAGE1問題セクション　ここまで -->
-
-      <!-- STAGE1解答入力セクション　ここから -->
-
-      <div class="frame">
-        <h2>1問目の答えを入力</h2>
-
-        <answer-input v-bind:correct="correctAnswer['stage1']['q1']"
-          v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
-
-      </div>
-
-      <br><br><br>
-
-      <div class="frame">
-
-        <h2>ヒント集</h2>
-
-        <br>
-        <h4>謎のヒントと解答は下から確認できる。</h4>
-
-        <details>
-          <summary class="btn-flat-border">第1問 - ヒント</summary>
-          <br><br>
-          カタカナに直そう
+        <h3>
+          ここが最初のステージ、Twitterのようだ。
           <br>
-        </details>
-        <br>
-        <details>
-          <summary class="btn-flat-border">第1問 - 解答</summary>
-          <br><br>
-          56
+          以下の2問を解けば、次のアプリへの道が開くらしい。
           <br>
-        </details>
-
-      </div>
-
-      <br><br><br>
-
-      <h2>第2問</h2>
-      <br><br>
-
-      <h1>
-        R8 → 2026
-        <br>
-        R1 → 2019
-        <br>
-        H13 → 2001
-        <br>
-        H18 → ????
-        <br>
-      </h1>
-
-      <!-- img class="toplogo" src="assets/img/t2.png" alt="1-2Twitter問題" -->
-
-      
-
-      <br><br>
-
-      <!-- STAGE1問題セクション　ここまで -->
-
-      <!-- STAGE1解答入力セクション　ここから -->
-
-      <div class="frame">
-        <h2>2問目の答えを入力</h2>
-
-
-        <answer-input v-bind:correct="correctAnswer['stage1']['q2']"
-          v-on:answer-input="answerInput($event, 'stage1', 2)"></answer-input>
-
-      </div>
-
-      <br><br><br>
-
-      <div class="frame">
-
-        <h2>ヒント集</h2>
-
-        <br>
-        <h4>謎のヒントと解答は下から確認できる。</h4>
-
-        <details>
-          <summary class="btn-flat-border">第2問 - ヒント</summary>
-          <br><br>
-          4桁の数字の後に“年”を付けよう
-          <br><br>
-          <img class="toplogo" src="assets/img/t2h.png" alt="1-2Twitterヒント">
-
+          問題を解き、ロックを解除しよう。
           <br>
-        </details>
+        </h3>
+
+        <h2>第1問</h2>
         <br>
-        <details>
-          <summary class="btn-flat-border">第2問 - 解答</summary>
-          <br><br>
-          2006
+        <h1 class="nazo">
+          銅鑼 → 17
           <br>
-        </details>
+          味噌 → 35
+          <br>
+          空 → ??
+          <br>
+        </h1>
 
-      </div>
+        <!-- img class="toplogo" src="assets/img/t1.png" alt="1-1Twitter問題" -->
 
-      <br><br><br>
-
-      <!-- STAGE1解答入力セクション　ここまで -->
-
-      <!-- STAGE1クリア画面　ここから -->
-
-      <section v-bind:class="{isClear:clear['stage1']}" class="section section--clear">
-        <div class="container">
-          <div class="clear-message">
-            <div class="clear-message__title">
-              <h2>STAGE：1 クリア！</h2>
-            </div>
-            <div class="clear-message__content">
-              <p>Twitterのロックが解除された！</p><br>
-              <p>次のアプリへ進もう。</p><br>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'"
-                class="btn-flat-border">次のステージへ</button>
-            </div>
-          </div>
-      </section>
-
-      <!-- STAGE1クリア画面　ここまで -->
-
-    </div>
-    <!-- STAGE1　ここまで -->
-
-    <!-- STAGE2　ここから -->
-
-    <div v-if="next['stage1']" id="sectionStage2" class="stage">
-
-      <!-- STAGE2問題セクション　ここから -->
-
-      <h2>STAGE：2 YouTubeの謎</h2>
-      <h3>
-        ああああ
-        <br>
-        ああああ
-        <br>
-        ああああ
         <br><br>
-      </h3>
-      <img class="toplogo" src="assets/img/stage.png" alt="main">
-      <br><br>
 
-      <!-- STAGE2問題セクション　ここまで -->
+        <!-- STAGE1問題セクション　ここまで -->
 
-      <!-- STAGE2解答入力セクション　ここから -->
+        <!-- STAGE1解答入力セクション　ここから -->
 
-      <div class="frame">
-        <h2>答えを入力</h2>
+        <div class="frame">
+          <h2>1問目の答えを入力</h2>
 
-        <answer-input v-bind:correct="correctAnswer['stage2']['q1']"
-          v-on:answer-input="answerInput($event, 'stage2', 1)">
-        </answer-input>
+          <answer-input v-bind:correct="correctAnswer['stage1']['q1']"
+            v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
-      </div>
+        </div>
 
-      <br><br><br>
+        <br><br><br>
 
-      <div class="frame">
+        <div class="frame">
 
-        <h2>ヒント集</h2>
+          <h2>ヒント集</h2>
 
-        <br>
-        <h4>謎のヒントと解答は下から確認できる。</h4>
-
-
-        <details>
-          <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
-          <br><br>
-          あああ
           <br>
-        </details>
-        <br>
-        <details>
-          <summary class="btn-flat-border">解答</summary>
-          <br><br>
-          YouTube
+          <h4>謎のヒントと解答は下から確認できる。</h4>
+
+          <details>
+            <summary class="btn-flat-border">第1問 - ヒント</summary>
+            <br><br>
+            カタカナに直そう
+            <br>
+          </details>
           <br>
-        </details>
+          <details>
+            <summary class="btn-flat-border">第1問 - 解答</summary>
+            <br><br>
+            56
+            <br>
+          </details>
 
-      </div>
+        </div>
 
-      <br><br><br>
+        <br><br><br>
 
-      <!-- STAGE2解答入力セクション　ここまで -->
-
-      <!-- STAGE2クリア画面　ここから -->
-      <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}" class="section section--clear">
-        <div class="container">
-          <div class="clear-message">
-            <div class="clear-message__title">
-              <h2>STAGE：2 クリア！</h2>
-            </div>
-            <div class="clear-message__content">
-              <p>YouTubeのロックが解除された！</p><br>
-              <p>さあ、脱出しよう。</p><br>
-              <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'"
-                class="btn-flat-border">次のステージへ</button>
-            </div>
-          </div>
-      </section>
-      <!-- STAGE2クリア画面　ここまで -->
-
-    </div>
-
-    <!-- STAGE2　ここまで -->
-
-    <!-- STAGE3　ここから -->
-    <div v-if="next['stage2']" id="sectionStage3" class="stage">
-
-      <!-- STAGE3問題セクション　ここから -->
-
-      <h2>STAGE：3 最後の謎</h2>
-      <h3>
-        ああああ
-        <br>
-        ああああ
-        <br>
-        ああああ
+        <h2>第2問</h2>
         <br><br>
-      </h3>
-      <img class="toplogo" src="assets/img/stage.png" alt="main">
-      <br><br>
 
-      <!-- STAGE3問題セクション　ここまで -->
+        <h1 class="nazo">
+          R8 → 2026
+          <br>
+          R1 → 2019
+          <br>
+          H13 → 2001
+          <br>
+          H18 → ????
+          <br>
+        </h1>
 
-      <!-- STAGE3解答入力セクションここから -->
+        <!-- img class="toplogo" src="assets/img/t2.png" alt="1-2Twitter問題" -->
+
+        <br><br>
+
+        <!-- STAGE1問題セクション　ここまで -->
+
+        <!-- STAGE1解答入力セクション　ここから -->
+
+        <div class="frame">
+          <h2>2問目の答えを入力</h2>
 
 
+          <answer-input v-bind:correct="correctAnswer['stage1']['q2']"
+            v-on:answer-input="answerInput($event, 'stage1', 2)"></answer-input>
 
-      <div class="frame">
-        <h2>答えを入力</h2>
+        </div>
 
-        <answer-input v-bind:correct="correctAnswer['stage3']['q1']"
-          v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
+        <br><br><br>
+
+        <div class="frame">
+
+          <h2>ヒント集</h2>
+
+          <br>
+          <h4>謎のヒントと解答は下から確認できる。</h4>
+
+          <details>
+            <summary class="btn-flat-border">第2問 - ヒント</summary>
+            <br><br>
+            4桁の数字の後に“年”を付けよう
+            <br><br>
+            <img class="toplogo" src="assets/img/t2h.png" alt="1-2Twitterヒント">
+
+            <br>
+          </details>
+          <br>
+          <details>
+            <summary class="btn-flat-border">第2問 - 解答</summary>
+            <br><br>
+            2006
+            <br>
+          </details>
+
+        </div>
+
+        <br><br><br>
+
+        <!-- STAGE1解答入力セクション　ここまで -->
+
+        <!-- STAGE1クリア画面　ここから -->
+
+        <section v-bind:class="{isClear:clear['stage1']}" class="section section--clear">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">
+                <h2>STAGE：1 クリア！</h2>
+              </div>
+              <div class="clear-message__content">
+                <p>Twitterのロックが解除された！</p><br>
+                <p>次のアプリへ進もう。</p><br>
+                <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'"
+                  class="btn-flat-border">次のステージへ</button>
+              </div>
+            </div>
+        </section>
+
+        <!-- STAGE1クリア画面　ここまで -->
+
+      </div>
+      <!-- STAGE1　ここまで -->
+
+      <!-- STAGE2　ここから -->
+
+      <div v-if="next['stage1']" id="sectionStage2" class="stage">
+
+        <!-- STAGE2問題セクション　ここから -->
+
+        <h2>STAGE：2 YouTubeの謎</h2>
+        <h3>
+          ああああ
+          <br>
+          ああああ
+          <br>
+          ああああ
+          <br><br>
+        </h3>
+        <img class="toplogo" src="assets/img/stage.png" alt="main">
+        <br><br>
+
+        <!-- STAGE2問題セクション　ここまで -->
+
+        <!-- STAGE2解答入力セクション　ここから -->
+
+        <div class="frame">
+          <h2>答えを入力</h2>
+
+          <answer-input v-bind:correct="correctAnswer['stage2']['q1']"
+            v-on:answer-input="answerInput($event, 'stage2', 1)">
+          </answer-input>
+
+        </div>
+
+        <br><br><br>
+
+        <div class="frame">
+
+          <h2>ヒント集</h2>
+
+          <br>
+          <h4>謎のヒントと解答は下から確認できる。</h4>
+
+
+          <details>
+            <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+            <br><br>
+            あああ
+            <br>
+          </details>
+          <br>
+          <details>
+            <summary class="btn-flat-border">解答</summary>
+            <br><br>
+            YouTube
+            <br>
+          </details>
+
+        </div>
+
+        <br><br><br>
+
+        <!-- STAGE2解答入力セクション　ここまで -->
+
+        <!-- STAGE2クリア画面　ここから -->
+        <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}" class="section section--clear">
+          <div class="container">
+            <div class="clear-message">
+              <div class="clear-message__title">
+                <h2>STAGE：2 クリア！</h2>
+              </div>
+              <div class="clear-message__content">
+                <p>YouTubeのロックが解除された！</p><br>
+                <p>さあ、脱出しよう。</p><br>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'"
+                  class="btn-flat-border">次のステージへ</button>
+              </div>
+            </div>
+        </section>
+        <!-- STAGE2クリア画面　ここまで -->
 
       </div>
 
-      <br><br><br>
+      <!-- STAGE2　ここまで -->
 
-      <div class="frame">
+      <!-- STAGE3　ここから -->
+      <div v-if="next['stage2']" id="sectionStage3" class="stage">
 
-        <h2>ヒント集</h2>
+        <!-- STAGE3問題セクション　ここから -->
 
-        <br>
-        <h4>謎のヒントと解答は下から確認できる。</h4>
-
-        <details class="anime">
-          <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
-          <br><br>
-          あああ
+        <h2>STAGE：3 最後の謎</h2>
+        <h3>
+          ああああ
           <br>
-        </details>
-        <br>
-        <details>
-          <summary class="btn-flat-border">解答</summary>
-          <br><br>
-          Final
+          ああああ
           <br>
-        </details>
+          ああああ
+          <br><br>
+        </h3>
+        <img class="toplogo" src="assets/img/stage.png" alt="main">
+        <br><br>
+
+        <!-- STAGE3問題セクション　ここまで -->
+
+        <!-- STAGE3解答入力セクションここから -->
+
+
+
+        <div class="frame">
+          <h2>答えを入力</h2>
+
+          <answer-input v-bind:correct="correctAnswer['stage3']['q1']"
+            v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
+
+        </div>
+
+        <br><br><br>
+
+        <div class="frame">
+
+          <h2>ヒント集</h2>
+
+          <br>
+          <h4>謎のヒントと解答は下から確認できる。</h4>
+
+          <details class="anime">
+            <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+            <br><br>
+            あああ
+            <br>
+          </details>
+          <br>
+          <details>
+            <summary class="btn-flat-border">解答</summary>
+            <br><br>
+            Final
+            <br>
+          </details>
+
+        </div>
+
+        <br><br><br>
+
+        <!-- STAGE3解答入力セクション　ここまで -->
+
 
       </div>
-
-      <br><br><br>
-
-      <!-- STAGE3解答入力セクション　ここまで -->
-
+      <!-- STAGE3　ここまで -->
 
     </div>
-    <!-- STAGE3　ここまで -->
 
     <div id=cr>
       <div class="hr"></div>

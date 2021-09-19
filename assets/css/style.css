@@ -154,8 +154,7 @@ h2:after {
   padding-bottom: 10px;
 }
 
-::selection
-{
+::selection{
     background: var(--main-Accentcolor);
     color: #ffffff;
 }
@@ -169,8 +168,18 @@ h2:after {
 
 #text{
   width: 95%;
-  max-width: 600px;
+  max-width: 800px;
   font-size: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nazo{
+  padding: 0.5em 1em;
+  background: var(--main-back2color);
+  border: dashed 2px var(--main-Accentcolor);/*点線*/
+  width: 80%;
+  max-width: 739px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -255,7 +264,7 @@ text-decoration: none
   top: 100%;
   left: 0;
   border-radius: 3px;
-  background:var(--main-Accentcolor);
+  background: var(--main-Accentcolor);
   transition: .2s;
 }
 
@@ -313,7 +322,7 @@ top: calc(100% - 3px);
     --main-Accentcolor: #00BFFF;
     --main-framecolor:#87CEFA;
     --main-backcolor: #FFFFFF;
-    --main-back2color: #D1FEFF;
+    --main-back2color: #D8F5FF;
     --main-textcolor: #000000;
   }
   
