@@ -229,6 +229,14 @@ h2:after {
   margin-left: auto;
 }
 
+.rem2t {
+  margin-top: 2rem;
+}
+
+.rem2b {
+  margin-bottom: 2rem;
+}
+
 .rem2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
