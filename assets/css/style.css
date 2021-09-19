@@ -113,6 +113,10 @@ background-color: var(--main-framecolor);
   backface-visibility: hidden;
 }
 
+.red{
+  color: red;
+}
+
 h2 {
   position: relative;
   line-height: 1.4;
