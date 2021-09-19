@@ -8,11 +8,11 @@
   display: none;
   /* 読み込み時に一瞬表示されるのを防ぐ */
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   top: 0;
   bottom: 0;
   left: 0;
@@ -31,8 +31,8 @@
 }
 
 .clear-message p {
-    margin: 0; 
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .section--clear.isClear {
@@ -62,13 +62,15 @@ summary {
 
 /*ここまでN高*/
 
-body{
-font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meirio', sans-serif;
-color: var(--main-textcolor);
-background-color: var(--main-framecolor);
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    "Meirio", sans-serif;
+  color: var(--main-textcolor);
+  background-color: var(--main-framecolor);
 }
 
-#all, #stage{
+#all,
+#stage {
   max-width: 839px;
   text-align: center;
   color: var(--main-textcolor);
@@ -78,7 +80,7 @@ background-color: var(--main-framecolor);
   border-radius: 39px;
 }
 
-#title{
+#title {
   max-width: 90%;
   padding: 15px 0 15px;
   margin-right: auto;
@@ -92,7 +94,7 @@ background-color: var(--main-framecolor);
   padding: 1.5rem 1.5rem calc(1.5rem + 10px);
   border: 2px solid red;
   color: red;
-  font-weight:bold;
+  font-weight: bold;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
@@ -104,31 +106,44 @@ background-color: var(--main-framecolor);
   left: 0;
   width: 100%;
   height: 10px;
-  content: '';
+  content: "";
   border-top: 2px solid red;
-  background-image: -webkit-repeating-linear-gradient(135deg, red, red 1px, transparent 2px, transparent 5px);
-  background-image: repeating-linear-gradient(-45deg, red, red 1px, transparent 2px, transparent 5px);
+  background-image: -webkit-repeating-linear-gradient(
+    135deg,
+    red,
+    red 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-image: repeating-linear-gradient(
+    -45deg,
+    red,
+    red 1px,
+    transparent 2px,
+    transparent 5px
+  );
   background-size: 7px 7px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.red{
+.red {
   color: red;
 }
 
 h2 {
   position: relative;
   line-height: 1.4;
-  padding:0.25em 1em;
+  padding: 0.25em 1em;
   display: inline-block;
-  top:0;
+  top: 0;
 }
 
-h2:before, h2:after { 
+h2:before,
+h2:after {
   position: absolute;
   top: 0;
-  content:'';
+  content: "";
   width: 8px;
   height: 100%;
   display: inline-block;
@@ -142,35 +157,34 @@ h2:before {
 }
 
 h2:after {
-  content: '';
+  content: "";
   border-top: solid 1px var(--main-Accentcolor);
   border-right: solid 1px var(--main-Accentcolor);
   border-bottom: solid 1px var(--main-Accentcolor);
   right: 0;
 }
 
-.rogo{
+.rogo {
   width: 80%;
   max-width: 439px;
-  display:  inline-block;
-  vertical-align:  middle;
+  display: inline-block;
+  vertical-align: middle;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-::selection{
-    background: var(--main-Accentcolor);
-    color: #ffffff;
+::selection {
+  background: var(--main-Accentcolor);
+  color: #ffffff;
 }
 
 /* for Firefox */
-::-moz-selection
-{
-    background:　var(--main-Accentcolor);
-    color: #ffffff;
+::-moz-selection {
+  background: var(--main-Accentcolor);
+  color: #ffffff;
 }
 
-#text{
+#text {
   width: 95%;
   max-width: 800px;
   font-size: 15px;
@@ -178,17 +192,17 @@ h2:after {
   margin-left: auto;
 }
 
-.nazo{
+.nazo {
   padding: 0.5em 1em;
   background: var(--main-back2color);
-  border: dashed 2px var(--main-Accentcolor);/*点線*/
+  border: dashed 2px var(--main-Accentcolor); /*点線*/
   width: 80%;
   max-width: 739px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.frame{
+.frame {
   border-top: solid 25px var(--main-Accentcolor);
   border-radius: 25px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.39);
@@ -204,7 +218,7 @@ h2:after {
   margin: 0 0 3rem;
 }
 
-.hr{
+.hr {
   width: 100%;
   height: 1.39px;
   border: 1.39px solid var(--main-Accentcolor);
@@ -220,8 +234,8 @@ h2:after {
 }
 
 .oflink {
-color: var(--main-Accentcolor);
-text-decoration: none
+  color: var(--main-Accentcolor);
+  text-decoration: none;
 }
 
 #cr {
@@ -242,8 +256,8 @@ text-decoration: none
   background-color: var(--main-backcolor);
   border: solid 2px var(--main-Accentcolor);
   border-radius: 3px;
-  transition: .39s;
-  font-weight:	bold;
+  transition: 0.39s;
+  font-weight: bold;
   min-width: 100px;
 }
 
@@ -263,54 +277,61 @@ text-decoration: none
 
 .btn-border-bottom:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   top: 100%;
   left: 0;
   border-radius: 3px;
   background: var(--main-Accentcolor);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .btn-border-bottom:hover:before {
-top: -webkit-calc(100% - 3px);
-top: calc(100% - 3px);
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
 }
 
-.sumaho-waku .sumaho-moji, .sumaho-waku:after, .sumaho-waku:before {
-  max-width: 200px;/*スマホ幅の最大値*/
-  background-color: #111;/*スマホの色*/
-  color: #666;/*◎ボタンの色*/
+.sumaho-waku .sumaho-moji,
+.sumaho-waku:after,
+.sumaho-waku:before {
+  max-width: 200px; /*スマホ幅の最大値*/
+  background-color: #111; /*スマホの色*/
+  color: #666; /*◎ボタンの色*/
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
 .sumaho-waku .sumaho-moji {
-  background-color: #fff;/*スマホ画面の背景色*/
-  border-left: 5px #111 solid;/*スマホの色*/
-  border-right: 5px #111 solid;/*スマホの色*/
-  height: 300px;/*スマホ画面の高さ*/
-  font-size: 14px;/*画面内のフォントサイズ*/
+  background-color: #fff; /*スマホ画面の背景色*/
+  border-left: 5px #111 solid; /*スマホの色*/
+  border-right: 5px #111 solid; /*スマホの色*/
+  height: 300px; /*スマホ画面の高さ*/
+  font-size: 14px; /*画面内のフォントサイズ*/
   width: 100%;
   padding: 5px;
   overflow: auto;
   box-sizing: border-box;
-  background: linear-gradient(-135deg, var(--main-back2color), var(--main-Accentcolor));
+  background: linear-gradient(
+    -135deg,
+    var(--main-back2color),
+    var(--main-Accentcolor)
+  );
 }
 
-.sumaho-waku:before, .sumaho-waku:after {
+.sumaho-waku:before,
+.sumaho-waku:after {
   display: block;
   text-align: center;
-  font-family: 'MS PGothic', sans-serif;
+  font-family: "MS PGothic", sans-serif;
   line-height: 1em;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .sumaho-waku:before {
-  content: '…';
+  content: "…";
   font-size: 30px;
   border-radius: 30px 30px 0 0;
   height: 30px;
@@ -328,40 +349,32 @@ top: calc(100% - 3px);
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-Accentcolor: #00BFFF;
-    --main-framecolor:#87CEFA;
-    --main-backcolor: #FFFFFF;
-    --main-back2color: #D8F5FF;
+    --main-Accentcolor: #00bfff;
+    --main-framecolor: #87cefa;
+    --main-backcolor: #ffffff;
+    --main-back2color: #d8f5ff;
     --main-textcolor: #000000;
   }
-  
-  }
-  
-  /*dark*/
-  
-  @media (prefers-color-scheme: dark) {
-  :root {
-    --main-Accentcolor: #91d0cd;
-    --main-framecolor:#009c9e;
-    --main-backcolor: #074d59;
-    --main-back2color: #00696B;
-    --main-textcolor: #ffffff;
-  
-  }
-  
-  }
-  
-  /*SmartPhone*/
-  
-  @media (max-width: 639px) {
-  
-  
-  }
-  
-  /*PC*/
-  
-  @media (min-width: 639px) {
-  
-
 }
 
+/*dark*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-Accentcolor: #91d0cd;
+    --main-framecolor: #009c9e;
+    --main-backcolor: #074d59;
+    --main-back2color: #00696b;
+    --main-textcolor: #ffffff;
+  }
+}
+
+/*SmartPhone*/
+
+@media (max-width: 639px) {
+}
+
+/*PC*/
+
+@media (min-width: 639px) {
+}
