@@ -30,6 +30,16 @@
 
       <h2>STAGE：1 Twitterの謎</h2>
       <h3>
+        ここが最初のステージ、Twitterのようだ。
+        <br>
+        以下の2問を解けば、次のアプリへの道が開くらしい。
+        <br>
+        問題を解き、ロックを解除しよう。
+        <br>
+      </h3>
+
+      <h2>第1問</h2>
+      <h3>
         ああああ
         <br>
         ああああ
@@ -45,7 +55,7 @@
       <!-- STAGE1解答入力セクション　ここから -->
 
       <div class="frame">
-        <h2>答えを入力</h2>
+        <h2>1問目の答えを入力</h2>
 
         <answer-input v-bind:correct="correctAnswer['stage1']['q1']"
           v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
@@ -62,14 +72,66 @@
         <h4>謎のヒントと解答は下から確認できる。</h4>
 
         <details>
-          <summary class="btn-flat-border">ヒント (クリックで表示)</summary>
+          <summary class="btn-flat-border">第1問 - ヒント</summary>
           <br><br>
           あああ
           <br>
         </details>
         <br>
         <details>
-          <summary class="btn-flat-border">解答</summary>
+          <summary class="btn-flat-border">第1問 - 解答</summary>
+          <br><br>
+          Twitter
+          <br>
+        </details>
+
+      </div>
+
+      <br><br><br>
+
+      <h2>第2問</h2>
+      <h3>
+        ああああ
+        <br>
+        ああああ
+        <br>
+        ああああ
+        <br><br>
+      </h3>
+      <img class="toplogo" src="assets/img/stage.png" alt="main">
+      <br><br>
+
+      <!-- STAGE1問題セクション　ここまで -->
+
+      <!-- STAGE1解答入力セクション　ここから -->
+
+      <div class="frame">
+        <h2>2問目の答えを入力</h2>
+
+
+        <answer-input v-bind:correct="correctAnswer['stage1']['q2']"
+          v-on:answer-input="answerInput($event, 'stage1', 2)"></answer-input>
+
+      </div>
+
+      <br><br><br>
+
+      <div class="frame">
+
+        <h2>ヒント集</h2>
+
+        <br>
+        <h4>謎のヒントと解答は下から確認できる。</h4>
+
+        <details>
+          <summary class="btn-flat-border">第2問 - ヒント</summary>
+          <br><br>
+          あああ
+          <br>
+        </details>
+        <br>
+        <details>
+          <summary class="btn-flat-border">第2問 - 解答</summary>
           <br><br>
           Twitter
           <br>
