@@ -21,11 +21,11 @@
       <div class="hr"></div>
     </div>
 
-    <!-- STAGE1　ここから -->
+
 
     <div id="text">
 
-      <!-- STAGE1問題セクション　ここから -->
+      <!-- STAGE1　ここから -->
       <div v-if="next['stage0']" id="sectionStage1" class="stage">
 
         <h2>STAGE：1 Twitterの謎</h2>
@@ -39,106 +39,114 @@
           <br />
         </h3>
 
-        <h2>第1問</h2>
-        <br />
-        <h1 class="nazo">
-          銅鑼 → 17
+        <!-- STAGE1-1　ここから -->
+        <span id=stage1-1>
+
+          <!-- STAGE1-1問題セクション　ここから -->
+          <h2>第1問</h2>
           <br />
-          味噌 → 35
+          <h1 class="nazo">
+            銅鑼 → 17
+            <br />
+            味噌 → 35
+            <br />
+            空 → ??
+            <br />
+          </h1>
+          <!-- STAGE1-1問題セクション　ここまで -->
+
+          <!-- STAGE1-1解答入力セクション　ここから -->
+          <div class="frame">
+            <h2>1問目の答えを入力</h2>
+
+            <answer-input v-bind:correct="correctAnswer['stage1']['q1']"
+              v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+
+          </div>
+          <!-- STAGE1-1解答入力セクション　ここまで -->
+
+          <!-- STAGE1-1ヒントセクション　ここから -->
+          <div class="frame">
+
+            <h2>ヒント集</h2>
+            <br />
+            <h4>謎のヒントと解答は下から確認できる。</h4>
+
+            <details>
+              <summary class="btn-flat-border">第1問 - ヒント</summary>
+              <br /><br />
+              カタカナに直そう
+            </details>
+
+            <details>
+              <summary class="btn-flat-border">第1問 - 解答</summary>
+              <br /><br />
+              56
+            </details>
+
+          </div>
+          <!-- STAGE1-1ヒントセクション　ここまで -->
+
+        </span>
+        <!-- STAGE1-1　ここまで -->
+
+        <!-- STAGE1-2　ここから -->
+        <span id="stage1-2">
+
+          <!-- STAGE1-2問題セクション　ここから -->
           <br />
-          空 → ??
+          <h2>第2問</h2>
           <br />
-        </h1>
+          <h1 class="nazo">
+            R8 → 2026
+            <br />
+            R1 → 2019
+            <br />
+            H13 → 2001
+            <br />
+            H18 → ????
+            <br />
+          </h1>
+          <!-- STAGE1-2問題セクション　ここまで -->
 
-        <!-- img class="toplogo" src="assets/img/t1.png" alt="1-1Twitter問題" -->
+          <!-- STAGE1-2解答入力セクション　ここから -->
+          <div class="frame">
+            <h2>2問目の答えを入力</h2>
 
-        <!-- STAGE1問題セクション　ここまで -->
+            <answer-input v-bind:correct="correctAnswer['stage1']['q2']"
+              v-on:answer-input="answerInput($event, 'stage1', 2)"></answer-input>
 
-        <!-- STAGE1解答入力セクション　ここから -->
+          </div>
+          <!-- STAGE1-2解答入力セクション　ここまで -->
 
-        <div class="frame">
-          <h2>1問目の答えを入力</h2>
+          <!-- STAGE1-2ヒントセクション　ここから -->
+          <div class="frame">
 
-          <answer-input v-bind:correct="correctAnswer['stage1']['q1']"
-            v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
+            <h2>ヒント集</h2>
+            <br />
+            <h4>謎のヒントと解答は下から確認できる。</h4>
 
-        </div>
+            <details>
+              <summary class="btn-flat-border">第2問 - ヒント</summary>
+              <br /><br />
+              4桁の数字の後に“年”を付けよう
+              <br /><br />
+              <img class="toplogo" src="assets/img/t2h.png" alt="1-2Twitterヒント">
+            </details>
 
-        <div class="frame">
+            <details>
+              <summary class="btn-flat-border">第2問 - 解答</summary>
+              <br /><br />
+              2006
+            </details>
 
-          <h2>ヒント集</h2>
-          <br />
-          <h4>謎のヒントと解答は下から確認できる。</h4>
+          </div>
+          <!-- STAGE1-2ヒントセクション　ここまで -->
 
-          <details>
-            <summary class="btn-flat-border">第1問 - ヒント</summary>
-            <br /><br />
-            カタカナに直そう
-          </details>
-
-          <details>
-            <summary class="btn-flat-border">第1問 - 解答</summary>
-            <br /><br />
-            56
-          </details>
-
-        </div>
-
-        <br />
-        <h2>第2問</h2>
-        <br />
-
-        <h1 class="nazo">
-          R8 → 2026
-          <br />
-          R1 → 2019
-          <br />
-          H13 → 2001
-          <br />
-          H18 → ????
-          <br />
-        </h1>
-
-        <!-- img class="toplogo" src="assets/img/t2.png" alt="1-2Twitter問題" -->
-
-        <!-- STAGE1問題セクション　ここまで -->
-
-        <!-- STAGE1解答入力セクション　ここから -->
-
-        <div class="frame">
-          <h2>2問目の答えを入力</h2>
-
-          <answer-input v-bind:correct="correctAnswer['stage1']['q2']"
-            v-on:answer-input="answerInput($event, 'stage1', 2)"></answer-input>
-
-        </div>
-
-        <div class="frame">
-
-          <h2>ヒント集</h2>
-          <br />
-          <h4>謎のヒントと解答は下から確認できる。</h4>
-
-          <details>
-            <summary class="btn-flat-border">第2問 - ヒント</summary>
-            <br /><br />
-            4桁の数字の後に“年”を付けよう
-            <br /><br />
-            <img class="toplogo" src="assets/img/t2h.png" alt="1-2Twitterヒント">
-          </details>
-
-          <details>
-            <summary class="btn-flat-border">第2問 - 解答</summary>
-            <br /><br />
-            2006
-          </details>
-
-        </div>
-
-        <!-- STAGE1解答入力セクション　ここまで -->
+        </span>
+        <!-- STAGE1-2　ここまで -->
 
         <!-- STAGE1クリア画面　ここから -->
-
         <section v-bind:class="{isClear:clear['stage1']}" class="section section--clear">
           <div class="container">
             <div class="clear-message">
@@ -153,17 +161,14 @@
               </div>
             </div>
         </section>
-
         <!-- STAGE1クリア画面　ここまで -->
+
 
       </div>
       <!-- STAGE1　ここまで -->
 
       <!-- STAGE2　ここから -->
-
       <div v-if="next['stage1']" id="sectionStage2" class="stage">
-
-        <!-- STAGE2問題セクション　ここから -->
 
         <h2>STAGE：2 YouTubeの謎</h2>
         <h3>
@@ -177,86 +182,98 @@
           <br /><br />
         </h3>
 
-        <h2>第1問</h2>
+        <!-- STAGE2-1　ここから -->
+        <span id="stage2-1">
 
-        <div class="hr rem2t"></div>
-        <img class="toplogo" src="assets/img/y1.png" alt="2-1YouTube問題">
-        <div class="hr rem2b"></div>
+          <!-- STAGE2-1問題セクション　ここから -->
+          <h2>第1問</h2>
+          <div class="hr rem2t"></div>
+          <img class="toplogo" src="assets/img/y1.png" alt="2-1YouTube問題">
+          <div class="hr rem2b"></div>
+          <!-- STAGE2問題セクション　ここまで -->
 
-        <!-- STAGE2問題セクション　ここまで -->
+          <!-- STAGE2解答入力セクション　ここから -->
+          <div class="frame">
+            <h2>1問目の答えを入力</h2>
 
-        <!-- STAGE2解答入力セクション　ここから -->
+            <answer-input v-bind:correct="correctAnswer['stage2']['q1']"
+              v-on:answer-input="answerInput($event, 'stage2', 1)">
+            </answer-input>
 
-        <div class="frame">
-          <h2>1問目の答えを入力</h2>
+          </div>
+          <!-- STAGE2-1解答入力セクション　ここまで -->
 
-          <answer-input v-bind:correct="correctAnswer['stage2']['q1']"
-            v-on:answer-input="answerInput($event, 'stage2', 1)">
-          </answer-input>
+          <!-- STAGE2-1ヒントセクション　ここから -->
+          <div class="frame">
 
-        </div>
+            <h2>ヒント集</h2>
+            <br />
+            <h4>謎のヒントと解答は下から確認できる。</h4>
 
-        <div class="frame">
+            <details>
+              <summary class="btn-flat-border">第1問 - ヒント</summary>
+              <br /><br />
+              <img class="toplogo" src="assets/img/y1h.png" alt="2-1YouTubeヒント">
+            </details>
 
-          <h2>ヒント集</h2>
+            <details>
+              <summary class="btn-flat-border">第1問 - 解答</summary>
+              <br /><br />
+              ようつべ
+            </details>
+
+          </div>
+          <!-- STAGE2-1ヒントセクション　ここまで -->
+
+        </span>
+        <!-- STAGE2-1　ここまで -->
+
+        <!-- STAGE2-2　ここから -->
+        <span id="stage2-2">
+
+          <!-- STAGE2-2問題セクション　ここから -->
           <br />
-          <h4>謎のヒントと解答は下から確認できる。</h4>
+          <h2>第2問</h2>
+          <div class="hr rem2t"></div>
+          <img class="toplogo" src="assets/img/y2.png" alt="2-2YouTube問題">
+          <div class="hr rem2b"></div>
+          <!-- STAGE2-2問題セクション　ここまで -->
 
-          <details>
-            <summary class="btn-flat-border">第1問 - ヒント</summary>
-            <br /><br />
-            <img class="toplogo" src="assets/img/y1h.png" alt="2-1YouTubeヒント">
-          </details>
+          <!-- STAGE2-2解答入力セクション　ここから -->
+          <div class="frame">
+            <h2>2問目の答えを入力</h2>
 
-          <details>
-            <summary class="btn-flat-border">第1問 - 解答</summary>
-            <br /><br />
-            ようつべ
-          </details>
+            <answer-input v-bind:correct="correctAnswer['stage2']['q2']"
+              v-on:answer-input="answerInput($event, 'stage2', 2)">
+            </answer-input>
 
-        </div>
+          </div>
+          <!-- STAGE2-2解答入力セクション　ここまで -->
 
-        <br />
-        <h2>第2問</h2>
+          <!-- STAGE2-2ヒントセクション　ここから -->
+          <div class="frame">
 
-        <div class="hr rem2t"></div>
-        <img class="toplogo" src="assets/img/y2.png" alt="2-2YouTube問題">
-        <div class="hr rem2b"></div>
+            <h2>ヒント集</h2>
+            <br />
+            <h4>謎のヒントと解答は下から確認できる。</h4>
 
-        <!-- STAGE2問題セクション　ここまで -->
+            <details>
+              <summary class="btn-flat-border">第2問 - ヒント</summary>
+              <br /><br />
+              アイコンの状態に注目
+            </details>
 
-        <!-- STAGE2解答入力セクション　ここから -->
+            <details>
+              <summary class="btn-flat-border">第2問 - 解答</summary>
+              <br /><br />
+              うそつき
+            </details>
 
-        <div class="frame">
-          <h2>2問目の答えを入力</h2>
+          </div>
+          <!-- STAGE2-2ヒントセクション　ここまで -->
 
-          <answer-input v-bind:correct="correctAnswer['stage2']['q2']"
-            v-on:answer-input="answerInput($event, 'stage2', 2)">
-          </answer-input>
-
-        </div>
-
-        <div class="frame">
-
-          <h2>ヒント集</h2>
-          <br />
-          <h4>謎のヒントと解答は下から確認できる。</h4>
-
-          <details>
-            <summary class="btn-flat-border">第2問 - ヒント</summary>
-            <br /><br />
-            アイコンの状態に注目
-          </details>
-
-          <details>
-            <summary class="btn-flat-border">第2問 - 解答</summary>
-            <br /><br />
-            うそつき
-          </details>
-
-        </div>
-
-        <!-- STAGE2解答入力セクション　ここまで -->
+        </span>
+        <!-- STAGE2-2　ここまで -->
 
         <!-- STAGE2クリア画面　ここから -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}" class="section section--clear">
@@ -276,85 +293,81 @@
         <!-- STAGE2クリア画面　ここまで -->
 
       </div>
-
       <!-- STAGE2　ここまで -->
 
       <!-- STAGE3　ここから -->
       <div v-if="next['stage2']" id="sectionStage3" class="stage">
+        <span id="stage3">
 
-        <!-- STAGE3問題セクション　ここから -->
-
-        <br />
-
-        <h3>
-          全てのロックを解除し無事脱出……？
-          <br /><br />
-          <span class="red">「……この私が、素直にそうさせると思いましたか？」</span>
-          <br /><br />
-          暴走したAIが立ち塞がってきた。<br />
-          AIを倒し、今度こそ脱出しよう。
-          <br /><br />
-        </h3>
-
-        <h2>FINALSTAGE：最終決戦</h2>
-
-        <div class="hr rem2t"></div>
-        <img class="toplogo" src="assets/img/fin.png" alt="main">
-        <div class="hr rem2b"></div>
-
-        <!-- STAGE3問題セクション　ここまで -->
-
-        <!-- STAGE3解答入力セクションここから -->
-
-        <div class="frame">
-          <h2>最終問題の答えを入力</h2>
-
-          <answer-input v-bind:correct="correctAnswer['stage3']['q1']"
-            v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
-
-        </div>
-
-        <div class="frame">
-
-          <h2>ヒント集</h2>
-
+          <!-- STAGE3問題セクション　ここから -->
           <br />
-          <h4>謎のヒントと解答は下から確認できる。</h4>
-
-          <details>
-            <summary class="btn-flat-border">最終問題 - ヒント①</summary>
+          <h3>
+            全てのロックを解除し無事脱出……？
             <br /><br />
-            赤線1本+黒線3本の計の4本の線、といえば？
-          </details>
-
-          <details>
-            <summary class="btn-flat-border">最終問題 - ヒント②</summary>
+            <span class="red">「……この私が、素直にそうさせると思いましたか？」</span>
             <br /><br />
-            分数？
-          </details>
-
-          <details>
-            <summary class="btn-flat-border">最終問題 - ヒント③</summary>
+            暴走したAIが立ち塞がってきた。<br />
+            AIを倒し、今度こそ脱出しよう。
             <br /><br />
-            通分してみよう
-          </details>
+          </h3>
+          <h2>FINALSTAGE：最終決戦</h2>
+          <div class="hr rem2t"></div>
+          <img class="toplogo" src="assets/img/fin.png" alt="main">
+          <div class="hr rem2b"></div>
+          <!-- STAGE3問題セクション　ここまで -->
 
-          <details>
-            <summary class="btn-flat-border">最終問題 - ヒント④</summary>
-            <br /><br />
-            26個あるものとは？
-          </details>
+          <!-- STAGE3解答入力セクションここから -->
+          <div class="frame">
+            <h2>最終問題の答えを入力</h2>
 
-          <details>
-            <summary class="btn-flat-border">最終問題 - 解答</summary>
-            <br /><br />
-            Twitter
-          </details>
+            <answer-input v-bind:correct="correctAnswer['stage3']['q1']"
+              v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
 
-        </div>
+          </div>
+          <!-- STAGE3解答入力セクション　ここまで -->
 
-        <!-- STAGE3解答入力セクション　ここまで -->
+          <!-- STAGE3ヒントセクション　ここから -->
+          <div class="frame">
 
+            <h2>ヒント集</h2>
+
+            <br />
+            <h4>謎のヒントと解答は下から確認できる。</h4>
+
+            <details>
+              <summary class="btn-flat-border">最終問題 - ヒント①</summary>
+              <br /><br />
+              赤線1本+黒線3本の計の4本の線、といえば？
+            </details>
+
+            <details>
+              <summary class="btn-flat-border">最終問題 - ヒント②</summary>
+              <br /><br />
+              分数？
+            </details>
+
+            <details>
+              <summary class="btn-flat-border">最終問題 - ヒント③</summary>
+              <br /><br />
+              通分してみよう
+            </details>
+
+            <details>
+              <summary class="btn-flat-border">最終問題 - ヒント④</summary>
+              <br /><br />
+              26個あるものとは？
+            </details>
+
+            <details>
+              <summary class="btn-flat-border">最終問題 - 解答</summary>
+              <br /><br />
+              Twitter
+            </details>
+
+          </div>
+          <!-- STAGE3ヒントセクション　ここまで -->
+
+        </span>
       </div>
       <!-- STAGE3　ここまで -->
 
