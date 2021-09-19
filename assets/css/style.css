@@ -214,9 +214,10 @@ h2:after {
   display: inline-block;
   width: 80%;
   max-width: 539px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   margin-right: auto;
   margin-left: auto;
-  margin: 0 0 3rem;
 }
 
 .hr {
