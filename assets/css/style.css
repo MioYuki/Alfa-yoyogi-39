@@ -201,6 +201,7 @@ h2:after {
   max-width: 539px;
   margin-right: auto;
   margin-left: auto;
+  margin: 0 0 3rem;
 }
 
 .hr{
