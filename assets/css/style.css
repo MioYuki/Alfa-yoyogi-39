@@ -171,6 +171,7 @@ h2:after {
   vertical-align: middle;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 0.9rem;
 }
 
 ::selection {
@@ -227,6 +228,11 @@ h2:after {
   margin-left: auto;
 }
 
+.rem2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .toplogo {
   width: 100%;
   margin-right: auto;
@@ -242,6 +248,7 @@ h2:after {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 2rem;
 }
 
 .sousin {
@@ -298,9 +305,16 @@ h2:after {
   max-width: 200px; /*スマホ幅の最大値*/
   background-color: #111; /*スマホの色*/
   color: #666; /*◎ボタンの色*/
-  display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.sumaho-moji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sumaho-waku .sumaho-moji {
@@ -331,6 +345,7 @@ h2:after {
 }
 
 .sumaho-waku:before {
+  margin-top: 2rem;
   content: "…";
   font-size: 30px;
   border-radius: 30px 30px 0 0;
