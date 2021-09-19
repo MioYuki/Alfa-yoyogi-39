@@ -41,6 +41,10 @@
   display: flex;
 }
 
+.bgt {
+  background-color: var(--main-clearcolor);
+}
+
 input {
   font-size: 15px;
   border: solid 2px var(--main-Accentcolor);
@@ -377,7 +381,8 @@ h2:after {
     --main-framecolor: #87cefa;
     --main-backcolor: #ffffff;
     --main-back2color: #d8f5ff;
-    --main-textcolor: #000000;
+    --main-textcolor: rgba(0, 0, 0);
+    --main-clearcolor: rgba(135, 206, 250, 0.7);
   }
 }
 
@@ -389,7 +394,8 @@ h2:after {
     --main-framecolor: #009c9e;
     --main-backcolor: #074d59;
     --main-back2color: #00696b;
-    --main-textcolor: #ffffff;
+    --main-textcolor: rgba(255, 255, 255);
+    --main-clearcolor: rgba(0, 156, 158, 0.7);
   }
 }
 
