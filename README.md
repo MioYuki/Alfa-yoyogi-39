@@ -1,2 +1,2 @@
 # Alfa-yoyogi-39
-【N/S High School ProjectN Real Escape Game】 Yoyogi Campus 39 Group Website
+【N/S高 ProjectN リアル脱出ゲーム】 代々木キャンパス39班のWebサイト
