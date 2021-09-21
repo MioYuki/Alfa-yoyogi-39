@@ -233,6 +233,19 @@ h2:after {
   margin-left: auto;
 }
 
+.Prem2t {
+  padding-top: 2rem;
+}
+
+.Prem2b {
+  padding-bottom: 2rem;
+}
+
+.Prem2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .Mrem2t {
   margin-top: 2rem;
 }
