@@ -131,6 +131,44 @@ body {
   backface-visibility: hidden;
 }
 
+.window {
+  position: relative;
+  padding: 1.5rem 1.5rem calc(1.5rem + 10px);
+  border: 2px solid var(--main-Accentcolor);
+  color: var(--main-textrcolor);
+  font-weight: bold;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.window:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: "";
+  border-top: 2px solid var(--main-Accentcolor);
+  background-image: -webkit-repeating-linear-gradient(
+    135deg,
+    var(--main-Accentcolor),
+    var(--main-Accentcolor) 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--main-Accentcolor),
+    var(--main-Accentcolor) 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-size: 7px 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 .red {
   color: red;
 }
