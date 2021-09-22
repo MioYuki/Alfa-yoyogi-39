@@ -419,6 +419,9 @@ h2:after {
 /*SmartPhone*/
 
 @media (max-width: 639px) {
+  .phide {
+    display: none;
+  }
 }
 
 /*PC*/
