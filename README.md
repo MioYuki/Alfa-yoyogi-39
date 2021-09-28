@@ -9,4 +9,10 @@
 
 ## 使用ツール
 
-VSCode,GitHub,vercel
+VSCode - コード記述
+
+GitHub・GitHubPages - ここ
+
+vercel - SSL化
+
+freenom - ドメイン取得
